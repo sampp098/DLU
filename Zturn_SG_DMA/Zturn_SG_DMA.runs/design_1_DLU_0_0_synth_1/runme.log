@@ -1,0 +1,1103 @@
+
+*** Running vivado
+    with args -log design_1_DLU_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_DLU_0_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source design_1_DLU_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/HLS_SampleGn'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx2019/Vivado/2019.1/data/ip'.
+Command: synth_design -top design_1_DLU_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13768 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 835.711 ; gain = 178.355
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_DLU_0_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ip/design_1_DLU_0_0/synth/design_1_DLU_0_0.vhd:99]
+	Parameter C_S_AXI_CRTL_BUS_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_CRTL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:12' bound to instance 'U0' of component 'DLU' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ip/design_1_DLU_0_0/synth/design_1_DLU_0_0.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'DLU' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:58]
+	Parameter C_S_AXI_CRTL_BUS_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_CRTL_BUS_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:167]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:170]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:428]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:430]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:433]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:435]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:440]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:443]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:445]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:448]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:450]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:453]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:464]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:466]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:468]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:470]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:472]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:564]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:604]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:609]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:655]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:659]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:665]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:686]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:694]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:700]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:727]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:777]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:779]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:921]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 2304 - type: integer 
+	Parameter AddressWidth bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_data' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_data.vhd:102' bound to instance 'data_U' of component 'DLU_data' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1038]
+INFO: [Synth 8-638] synthesizing module 'DLU_data' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_data.vhd:122]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 2304 - type: integer 
+	Parameter AddressWidth bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_data_ram' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_data.vhd:10' bound to instance 'DLU_data_ram_U' of component 'DLU_data_ram' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_data.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'DLU_data_ram' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_data.vhd:33]
+	Parameter MEM_TYPE bound to: block - type: string 
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 12 - type: integer 
+	Parameter MEM_SIZE bound to: 2304 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DLU_data_ram' (1#1) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_data.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'DLU_data' (2#1) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_data.vhd:122]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_0_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1057]
+INFO: [Synth 8-638] synthesizing module 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:107]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0_ram' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:10' bound to instance 'DLU_filter_0_ram_U' of component 'DLU_filter_0_ram' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'DLU_filter_0_ram' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:32]
+	Parameter MEM_TYPE bound to: block - type: string 
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DLU_filter_0_ram' (3#1) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'DLU_filter_0' (4#1) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:107]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_1_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1075]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_2_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1093]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_3_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1111]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_4_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1129]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_5_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1147]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_6_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1165]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_7_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1183]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_8_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1201]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_9_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1219]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_10_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1237]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_11_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1255]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_12_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1273]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_13_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1291]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_14_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1309]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_filter_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_filter_0.vhd:88' bound to instance 'filter_15_U' of component 'DLU_filter_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1327]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_CRTL_BUS_s_axi' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_CRTL_BUS_s_axi.vhd:9' bound to instance 'DLU_CRTL_BUS_s_axi_U' of component 'DLU_CRTL_BUS_s_axi' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1345]
+INFO: [Synth 8-638] synthesizing module 'DLU_CRTL_BUS_s_axi' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_CRTL_BUS_s_axi.vhd:70]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'DLU_CRTL_BUS_s_axi' (5#1) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_CRTL_BUS_s_axi.vhd:70]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U1' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1378]
+INFO: [Synth 8-638] synthesizing module 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb_DSP48_0' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:9' bound to instance 'DLU_mac_muladd_8sbkb_DSP48_0_U' of component 'DLU_mac_muladd_8sbkb_DSP48_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'DLU_mac_muladd_8sbkb_DSP48_0' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'DLU_mac_muladd_8sbkb_DSP48_0' (6#1) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'DLU_mac_muladd_8sbkb' (7#1) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:56]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U2' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1392]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U3' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1406]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U4' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1420]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U5' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1434]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U6' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1448]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U7' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1462]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U8' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1476]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U9' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1490]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U10' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1504]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U11' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1518]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U12' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1532]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U13' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1546]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U14' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1560]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U15' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1574]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'DLU_mac_muladd_8sbkb' declared at 'c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU_mac_muladd_8sbkb.vhd:41' bound to instance 'DLU_mac_muladd_8sbkb_U16' of component 'DLU_mac_muladd_8sbkb' [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1588]
+WARNING: [Synth 8-6014] Unused sequential element outStream_V_dest_V_1_sel_rd_reg was removed.  [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1738]
+WARNING: [Synth 8-6014] Unused sequential element outStream_V_id_V_1_sel_rd_reg was removed.  [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1772]
+WARNING: [Synth 8-6014] Unused sequential element outStream_V_keep_V_1_sel_rd_reg was removed.  [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1806]
+WARNING: [Synth 8-6014] Unused sequential element outStream_V_strb_V_1_sel_rd_reg was removed.  [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1888]
+WARNING: [Synth 8-6014] Unused sequential element outStream_V_user_V_1_sel_rd_reg was removed.  [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:1922]
+INFO: [Synth 8-256] done synthesizing module 'DLU' (8#1) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'design_1_DLU_0_0' (9#1) [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ip/design_1_DLU_0_0/synth/design_1_DLU_0_0.vhd:99]
+WARNING: [Synth 8-3331] design DLU_filter_0 has unconnected port reset
+WARNING: [Synth 8-3331] design DLU_data has unconnected port reset
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TKEEP[3]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TKEEP[2]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TKEEP[1]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TKEEP[0]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TSTRB[3]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TSTRB[2]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TSTRB[1]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TSTRB[0]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TUSER[1]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TUSER[0]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TLAST[0]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TID[4]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TID[3]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TID[2]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TID[1]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TID[0]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TDEST[5]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TDEST[4]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TDEST[3]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TDEST[2]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TDEST[1]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TDEST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 915.320 ; gain = 257.965
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 915.320 ; gain = 257.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 915.320 ; gain = 257.965
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ip/design_1_DLU_0_0/constraints/DLU_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ip/design_1_DLU_0_0/constraints/DLU_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.runs/design_1_DLU_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.runs/design_1_DLU_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1053.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.159 . Memory (MB): peak = 1065.695 ; gain = 12.535
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1065.695 ; gain = 408.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1065.695 ; gain = 408.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.runs/design_1_DLU_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1065.695 ; gain = 408.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'DLU_CRTL_BUS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'DLU_CRTL_BUS_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal "DLU_data_ram:/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "DLU_filter_0_ram:/ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'DLU_CRTL_BUS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              110
+*
+                  rdidle |                              010 |                              100
+                  rddata |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'DLU_CRTL_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1065.695 ; gain = 408.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     13 Bit       Adders := 33    
+	   2 Input     13 Bit       Adders := 4     
+	   3 Input     10 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 18    
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 47    
+	               29 Bit    Registers := 1     
+	               13 Bit    Registers := 33    
+	                9 Bit    Registers := 8     
+	                8 Bit    Registers := 54    
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 65    
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 17    
++---RAMs : 
+	              18K Bit         RAMs := 1     
+	              128 Bit         RAMs := 16    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 22    
+	   3 Input     32 Bit        Muxes := 1     
+	   3 Input     31 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 4     
+	   3 Input     28 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   3 Input     25 Bit        Muxes := 1     
+	   3 Input     24 Bit        Muxes := 1     
+	   3 Input     23 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 66    
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 83    
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 10    
+	   4 Input      2 Bit        Muxes := 8     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 22    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DLU_data_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	              18K Bit         RAMs := 1     
+Module DLU_filter_0_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              128 Bit         RAMs := 1     
+Module DLU_CRTL_BUS_s_axi 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module DLU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     13 Bit       Adders := 33    
+	   2 Input     13 Bit       Adders := 4     
+	   3 Input     10 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 18    
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 44    
+	               29 Bit    Registers := 1     
+	               13 Bit    Registers := 33    
+	                9 Bit    Registers := 8     
+	                8 Bit    Registers := 36    
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 65    
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 21    
+	   3 Input     32 Bit        Muxes := 1     
+	   3 Input     31 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 4     
+	   3 Input     28 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 1     
+	   3 Input     25 Bit        Muxes := 1     
+	   3 Input     24 Bit        Muxes := 1     
+	   3 Input     23 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 66    
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 80    
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 10    
+	   4 Input      2 Bit        Muxes := 8     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 21    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+DSP Report: Generating DSP p, operation Mode is: C+A*B.
+DSP Report: operator p is absorbed into DSP p.
+DSP Report: operator m is absorbed into DSP p.
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln52_reg_4899_reg' and it is trimmed from '13' to '12' bits. [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:2314]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln121_2_reg_4421_reg' and it is trimmed from '13' to '12' bits. [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:2285]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln123_2_reg_4431_reg' and it is trimmed from '13' to '12' bits. [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:2287]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln125_2_reg_4441_reg' and it is trimmed from '13' to '12' bits. [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:2289]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln127_2_reg_4451_reg' and it is trimmed from '13' to '12' bits. [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:2291]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln129_2_reg_4461_reg' and it is trimmed from '13' to '12' bits. [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:2293]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln131_2_reg_4471_reg' and it is trimmed from '13' to '12' bits. [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:2295]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln133_2_reg_4481_reg' and it is trimmed from '13' to '12' bits. [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:2297]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln120_2_reg_4416_reg' and it is trimmed from '13' to '12' bits. [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:2284]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln122_2_reg_4426_reg' and it is trimmed from '13' to '12' bits. [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:2286]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln124_2_reg_4436_reg' and it is trimmed from '13' to '12' bits. [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:2288]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln126_2_reg_4446_reg' and it is trimmed from '13' to '12' bits. [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:2290]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln128_2_reg_4456_reg' and it is trimmed from '13' to '12' bits. [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:2292]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln130_2_reg_4466_reg' and it is trimmed from '13' to '12' bits. [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:2294]
+WARNING: [Synth 8-3936] Found unconnected internal register 'add_ln132_2_reg_4476_reg' and it is trimmed from '13' to '12' bits. [c:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.srcs/sources_1/bd/design_1/ipshared/0799/hdl/vhdl/DLU.vhd:2296]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TKEEP[3]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TKEEP[2]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TKEEP[1]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TKEEP[0]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TSTRB[3]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TSTRB[2]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TSTRB[1]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TSTRB[0]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TUSER[1]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TUSER[0]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TLAST[0]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TID[4]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TID[3]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TID[2]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TID[1]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TID[0]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TDEST[5]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TDEST[4]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TDEST[3]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TDEST[2]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TDEST[1]
+WARNING: [Synth 8-3331] design DLU has unconnected port inStream_TDEST[0]
+INFO: [Synth 8-3971] The signal "U0/data_U/DLU_data_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_0_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_1_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_2_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_3_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_4_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_5_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_6_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_7_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_8_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_9_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_10_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_11_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_12_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_13_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_14_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/filter_15_U/DLU_filter_0_ram_U/ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'U0/filter_14_addr_7_reg_4282_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_14_addr_8_reg_4102_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_14_addr_7_reg_4282_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_14_addr_8_reg_4102_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_14_addr_5_reg_4202_reg[0]' (FDE) to 'U0/filter_1_addr_5_reg_4137_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_14_addr_6_reg_4022_reg[0]' (FDE) to 'U0/filter_1_addr_6_reg_3957_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_14_addr_5_reg_4202_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_14_addr_6_reg_4022_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_14_addr_5_reg_4202_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_14_addr_6_reg_4022_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_13_addr_7_reg_4277_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_13_addr_8_reg_4097_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_13_addr_7_reg_4277_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_13_addr_8_reg_4097_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_13_addr_5_reg_4197_reg[0]' (FDE) to 'U0/filter_1_addr_5_reg_4137_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_13_addr_6_reg_4017_reg[0]' (FDE) to 'U0/filter_1_addr_6_reg_3957_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_13_addr_5_reg_4197_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_13_addr_6_reg_4017_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_13_addr_5_reg_4197_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_13_addr_6_reg_4017_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_12_addr_7_reg_4272_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_12_addr_8_reg_4092_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_12_addr_7_reg_4272_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_12_addr_8_reg_4092_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_12_addr_5_reg_4192_reg[0]' (FDE) to 'U0/filter_1_addr_5_reg_4137_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_12_addr_6_reg_4012_reg[0]' (FDE) to 'U0/filter_1_addr_6_reg_3957_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_12_addr_5_reg_4192_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_12_addr_6_reg_4012_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_12_addr_5_reg_4192_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_12_addr_6_reg_4012_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_11_addr_7_reg_4267_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_11_addr_8_reg_4087_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_11_addr_7_reg_4267_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_11_addr_8_reg_4087_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_11_addr_5_reg_4187_reg[0]' (FDE) to 'U0/filter_1_addr_5_reg_4137_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_11_addr_6_reg_4007_reg[0]' (FDE) to 'U0/filter_1_addr_6_reg_3957_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_11_addr_5_reg_4187_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_11_addr_6_reg_4007_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_11_addr_5_reg_4187_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_11_addr_6_reg_4007_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_10_addr_7_reg_4262_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_10_addr_8_reg_4082_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_10_addr_7_reg_4262_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_10_addr_8_reg_4082_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_10_addr_5_reg_4182_reg[0]' (FDE) to 'U0/filter_1_addr_5_reg_4137_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_10_addr_6_reg_4002_reg[0]' (FDE) to 'U0/filter_1_addr_6_reg_3957_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_10_addr_5_reg_4182_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_10_addr_6_reg_4002_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_10_addr_5_reg_4182_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_10_addr_6_reg_4002_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_9_addr_7_reg_4257_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_9_addr_8_reg_4077_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_9_addr_7_reg_4257_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_9_addr_8_reg_4077_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_9_addr_5_reg_4177_reg[0]' (FDE) to 'U0/filter_1_addr_5_reg_4137_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_9_addr_6_reg_3997_reg[0]' (FDE) to 'U0/filter_1_addr_6_reg_3957_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_9_addr_5_reg_4177_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_9_addr_6_reg_3997_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_9_addr_5_reg_4177_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_9_addr_6_reg_3997_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_8_addr_7_reg_4252_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_8_addr_8_reg_4072_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_8_addr_7_reg_4252_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_8_addr_8_reg_4072_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_8_addr_5_reg_4172_reg[0]' (FDE) to 'U0/filter_1_addr_5_reg_4137_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_8_addr_6_reg_3992_reg[0]' (FDE) to 'U0/filter_1_addr_6_reg_3957_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_8_addr_5_reg_4172_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_8_addr_6_reg_3992_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_8_addr_5_reg_4172_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_8_addr_6_reg_3992_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_7_addr_7_reg_4247_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_7_addr_8_reg_4067_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_7_addr_7_reg_4247_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_7_addr_8_reg_4067_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_7_addr_5_reg_4167_reg[0]' (FDE) to 'U0/filter_1_addr_5_reg_4137_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_7_addr_6_reg_3987_reg[0]' (FDE) to 'U0/filter_1_addr_6_reg_3957_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_7_addr_5_reg_4167_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_7_addr_6_reg_3987_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_7_addr_5_reg_4167_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_7_addr_6_reg_3987_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_6_addr_7_reg_4242_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_6_addr_8_reg_4062_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_6_addr_7_reg_4242_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_6_addr_8_reg_4062_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_6_addr_5_reg_4162_reg[0]' (FDE) to 'U0/filter_1_addr_5_reg_4137_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_6_addr_6_reg_3982_reg[0]' (FDE) to 'U0/filter_1_addr_6_reg_3957_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_6_addr_5_reg_4162_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_6_addr_6_reg_3982_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_6_addr_5_reg_4162_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_6_addr_6_reg_3982_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_5_addr_7_reg_4237_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_5_addr_8_reg_4057_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_5_addr_7_reg_4237_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_5_addr_8_reg_4057_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_5_addr_5_reg_4157_reg[0]' (FDE) to 'U0/filter_1_addr_5_reg_4137_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_5_addr_6_reg_3977_reg[0]' (FDE) to 'U0/filter_1_addr_6_reg_3957_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_5_addr_5_reg_4157_reg[2]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_5_addr_6_reg_3977_reg[2]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_5_addr_5_reg_4157_reg[3]' (FDE) to 'U0/filter_1_addr_7_reg_4217_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/filter_5_addr_6_reg_3977_reg[3]' (FDE) to 'U0/filter_1_addr_8_reg_4037_reg[3]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/\add_ln52_reg_4899_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/j_2_fu_2451_p2_inferred/\j3_0_reg_1755_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/j_2_fu_2451_p2_inferred/\j3_0_reg_1755_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\filter_15_addr_5_reg_4207_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\filter_15_addr_6_reg_4027_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module DLU_CRTL_BUS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module DLU_CRTL_BUS_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1065.695 ; gain = 408.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name       | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|DLU_data_ram:     | ram_reg    | 4 K x 8(WRITE_FIRST)   | W | R | 4 K x 8(WRITE_FIRST)   | W | R | Port A and B     | 0      | 1      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
++------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                  | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|DLU_mac_muladd_8sbkb_DSP48_0 | C+A*B       | 9      | 8      | 32     | -      | 32     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++-----------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance U0/i_2_2/data_U/DLU_data_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/i_2_2/data_U/DLU_data_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1073.000 ; gain = 415.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 1181.789 ; gain = 524.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name       | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|DLU_data_ram:     | ram_reg    | 4 K x 8(WRITE_FIRST)   | W | R | 4 K x 8(WRITE_FIRST)   | W | R | Port A and B     | 0      | 1      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
+|DLU_filter_0_ram: | ram_reg    | 16 x 8(WRITE_FIRST)    | W | R | 16 x 8(READ_FIRST)     | W |   | Port A and B     | 1      | 0      | 
++------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance U0/data_U/DLU_data_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/data_U/DLU_data_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_0_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_1_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_2_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_3_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_4_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_5_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_6_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_7_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_8_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_9_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_10_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_11_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_12_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_13_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_14_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance U0/filter_15_U/DLU_filter_0_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:21 . Memory (MB): peak = 1182.797 ; gain = 525.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1182.797 ; gain = 525.441
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1182.797 ; gain = 525.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1182.797 ; gain = 525.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1182.797 ; gain = 525.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1182.797 ; gain = 525.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1182.797 ; gain = 525.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   176|
+|2     |DSP48E1_1 |    16|
+|3     |LUT1      |    47|
+|4     |LUT2      |   281|
+|5     |LUT3      |   369|
+|6     |LUT4      |   297|
+|7     |LUT5      |   450|
+|8     |LUT6      |   342|
+|9     |MUXF7     |    64|
+|10    |MUXF8     |    32|
+|11    |RAMB18E1  |    16|
+|12    |RAMB36E1  |     1|
+|13    |FDRE      |  1570|
+|14    |FDSE      |    17|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+--------------------------------+------+
+|      |Instance                             |Module                          |Cells |
++------+-------------------------------------+--------------------------------+------+
+|1     |top                                  |                                |  3678|
+|2     |  U0                                 |DLU                             |  3678|
+|3     |    DLU_CRTL_BUS_s_axi_U             |DLU_CRTL_BUS_s_axi              |   231|
+|4     |    DLU_mac_muladd_8sbkb_U1          |DLU_mac_muladd_8sbkb            |     1|
+|5     |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0_59 |     1|
+|6     |    DLU_mac_muladd_8sbkb_U10         |DLU_mac_muladd_8sbkb_0          |     3|
+|7     |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0_58 |     3|
+|8     |    DLU_mac_muladd_8sbkb_U11         |DLU_mac_muladd_8sbkb_1          |     1|
+|9     |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0_57 |     1|
+|10    |    DLU_mac_muladd_8sbkb_U12         |DLU_mac_muladd_8sbkb_2          |     3|
+|11    |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0_56 |     3|
+|12    |    DLU_mac_muladd_8sbkb_U13         |DLU_mac_muladd_8sbkb_3          |     1|
+|13    |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0_55 |     1|
+|14    |    DLU_mac_muladd_8sbkb_U14         |DLU_mac_muladd_8sbkb_4          |     3|
+|15    |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0_54 |     3|
+|16    |    DLU_mac_muladd_8sbkb_U15         |DLU_mac_muladd_8sbkb_5          |     1|
+|17    |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0_53 |     1|
+|18    |    DLU_mac_muladd_8sbkb_U16         |DLU_mac_muladd_8sbkb_6          |   100|
+|19    |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0_52 |   100|
+|20    |    DLU_mac_muladd_8sbkb_U2          |DLU_mac_muladd_8sbkb_7          |     1|
+|21    |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0_51 |     1|
+|22    |    DLU_mac_muladd_8sbkb_U3          |DLU_mac_muladd_8sbkb_8          |     1|
+|23    |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0_50 |     1|
+|24    |    DLU_mac_muladd_8sbkb_U4          |DLU_mac_muladd_8sbkb_9          |     1|
+|25    |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0_49 |     1|
+|26    |    DLU_mac_muladd_8sbkb_U5          |DLU_mac_muladd_8sbkb_10         |     1|
+|27    |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0_48 |     1|
+|28    |    DLU_mac_muladd_8sbkb_U6          |DLU_mac_muladd_8sbkb_11         |     1|
+|29    |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0_47 |     1|
+|30    |    DLU_mac_muladd_8sbkb_U7          |DLU_mac_muladd_8sbkb_12         |     1|
+|31    |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0_46 |     1|
+|32    |    DLU_mac_muladd_8sbkb_U8          |DLU_mac_muladd_8sbkb_13         |    39|
+|33    |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0_45 |    39|
+|34    |    DLU_mac_muladd_8sbkb_U9          |DLU_mac_muladd_8sbkb_14         |     1|
+|35    |      DLU_mac_muladd_8sbkb_DSP48_0_U |DLU_mac_muladd_8sbkb_DSP48_0    |     1|
+|36    |    data_U                           |DLU_data                        |   157|
+|37    |      DLU_data_ram_U                 |DLU_data_ram                    |   157|
+|38    |    filter_0_U                       |DLU_filter_0                    |    51|
+|39    |      DLU_filter_0_ram_U             |DLU_filter_0_ram_44             |    51|
+|40    |    filter_10_U                      |DLU_filter_0_15                 |    21|
+|41    |      DLU_filter_0_ram_U             |DLU_filter_0_ram_43             |    21|
+|42    |    filter_11_U                      |DLU_filter_0_16                 |    21|
+|43    |      DLU_filter_0_ram_U             |DLU_filter_0_ram_42             |    21|
+|44    |    filter_12_U                      |DLU_filter_0_17                 |    21|
+|45    |      DLU_filter_0_ram_U             |DLU_filter_0_ram_41             |    21|
+|46    |    filter_13_U                      |DLU_filter_0_18                 |    21|
+|47    |      DLU_filter_0_ram_U             |DLU_filter_0_ram_40             |    21|
+|48    |    filter_14_U                      |DLU_filter_0_19                 |    21|
+|49    |      DLU_filter_0_ram_U             |DLU_filter_0_ram_39             |    21|
+|50    |    filter_15_U                      |DLU_filter_0_20                 |    26|
+|51    |      DLU_filter_0_ram_U             |DLU_filter_0_ram_38             |    26|
+|52    |    filter_1_U                       |DLU_filter_0_21                 |    22|
+|53    |      DLU_filter_0_ram_U             |DLU_filter_0_ram_37             |    22|
+|54    |    filter_2_U                       |DLU_filter_0_22                 |    21|
+|55    |      DLU_filter_0_ram_U             |DLU_filter_0_ram_36             |    21|
+|56    |    filter_3_U                       |DLU_filter_0_23                 |    21|
+|57    |      DLU_filter_0_ram_U             |DLU_filter_0_ram_35             |    21|
+|58    |    filter_4_U                       |DLU_filter_0_24                 |    21|
+|59    |      DLU_filter_0_ram_U             |DLU_filter_0_ram_34             |    21|
+|60    |    filter_5_U                       |DLU_filter_0_25                 |    21|
+|61    |      DLU_filter_0_ram_U             |DLU_filter_0_ram_33             |    21|
+|62    |    filter_6_U                       |DLU_filter_0_26                 |    21|
+|63    |      DLU_filter_0_ram_U             |DLU_filter_0_ram_32             |    21|
+|64    |    filter_7_U                       |DLU_filter_0_27                 |    27|
+|65    |      DLU_filter_0_ram_U             |DLU_filter_0_ram_31             |    27|
+|66    |    filter_8_U                       |DLU_filter_0_28                 |    21|
+|67    |      DLU_filter_0_ram_U             |DLU_filter_0_ram_30             |    21|
+|68    |    filter_9_U                       |DLU_filter_0_29                 |    21|
+|69    |      DLU_filter_0_ram_U             |DLU_filter_0_ram                |    21|
++------+-------------------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:26 . Memory (MB): peak = 1182.797 ; gain = 525.441
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 39 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:21 . Memory (MB): peak = 1182.797 ; gain = 375.066
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1182.797 ; gain = 525.441
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 305 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1182.797 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+250 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:36 ; elapsed = 00:01:42 . Memory (MB): peak = 1182.797 ; gain = 794.074
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1182.797 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.runs/design_1_DLU_0_0_synth_1/design_1_DLU_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_DLU_0_0, cache-ID = ad8f7b64b41c0f69
+INFO: [Coretcl 2-1174] Renamed 68 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1182.797 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Mohsen/Desktop/zturn_sg_DMA/Mahsa/Zturn_SG_DMA/Zturn_SG_DMA.runs/design_1_DLU_0_0_synth_1/design_1_DLU_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_DLU_0_0_utilization_synth.rpt -pb design_1_DLU_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 24 15:12:34 2020...

@@ -1,0 +1,2102 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:33 . Memory (MB): peak = 185.742 ; gain = 93.051
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:33 . Memory (MB): peak = 185.742 ; gain = 93.051
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:35 . Memory (MB): peak = 185.742 ; gain = 93.051
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:36 . Memory (MB): peak = 185.742 ; gain = 93.051
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:36 . Memory (MB): peak = 185.742 ; gain = 93.051
+WARNING: [XFORM 203-561] 'Loop-1' (HLS_SampleGn/core.cpp:29:2) in function 'sampleGenerator' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:36 . Memory (MB): peak = 185.742 ; gain = 93.051
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sampleGenerator' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sampleGenerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 36.797 seconds; current allocated memory: 111.666 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.226 seconds; current allocated memory: 111.811 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sampleGenerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/gain' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sampleGenerator' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'gain' to AXI-Lite port CRTL_BUS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sampleGenerator'.
+INFO: [HLS 200-111]  Elapsed time: 0.429 seconds; current allocated memory: 112.966 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:40 . Memory (MB): peak = 185.742 ; gain = 93.051
+INFO: [VHDL 208-304] Generating VHDL RTL for sampleGenerator.
+INFO: [VLOG 209-307] Generating Verilog RTL for sampleGenerator.
+INFO: [HLS 200-112] Total elapsed time: 40.589 seconds; peak allocated memory: 112.966 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from HLS_SampleGn/core.cpp:1:
+HLS_SampleGn/core.cpp:5:1: error: unknown type name 'uint32_t'
+uint32_t a[4];
+^
+HLS_SampleGn/core.cpp:24:4: error: use of undeclared identifier 'uint8_t'
+   uint8_t* b1=(uint8_t*)a[i];
+   ^
+HLS_SampleGn/core.cpp:24:13: error: use of undeclared identifier 'b1'
+   uint8_t* b1=(uint8_t*)a[i];
+            ^
+HLS_SampleGn/core.cpp:24:17: error: use of undeclared identifier 'uint8_t'
+   uint8_t* b1=(uint8_t*)a[i];
+                ^
+HLS_SampleGn/core.cpp:24:25: error: expected expression
+   uint8_t* b1=(uint8_t*)a[i];
+                        ^
+HLS_SampleGn/core.cpp:25:4: error: use of undeclared identifier 'uint8_t'
+   uint8_t* b2=(uint8_t*)valIn.data;
+   ^
+HLS_SampleGn/core.cpp:25:13: error: use of undeclared identifier 'b2'
+   uint8_t* b2=(uint8_t*)valIn.data;
+            ^
+HLS_SampleGn/core.cpp:25:17: error: use of undeclared identifier 'uint8_t'
+   uint8_t* b2=(uint8_t*)valIn.data;
+                ^
+HLS_SampleGn/core.cpp:25:25: error: expected expression
+   uint8_t* b2=(uint8_t*)valIn.data;
+                        ^
+HLS_SampleGn/core.cpp:28:11: error: use of undeclared identifier 'b1'
+ result +=b1[j]-b2[j];
+          ^
+HLS_SampleGn/core.cpp:28:17: error: use of undeclared identifier 'b2'
+ result +=b1[j]-b2[j];
+                ^
+11 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from HLS_SampleGn/core.cpp:1:
+HLS_SampleGn/core.cpp:5:1: error: unknown type name 'uint32_t'
+uint32_t a[4];
+^
+HLS_SampleGn/core.cpp:24:4: error: use of undeclared identifier 'uint8_t'
+   uint8_t* b1=(uint8_t*)a[i];
+   ^
+HLS_SampleGn/core.cpp:24:13: error: use of undeclared identifier 'b1'
+   uint8_t* b1=(uint8_t*)a[i];
+            ^
+HLS_SampleGn/core.cpp:24:17: error: use of undeclared identifier 'uint8_t'
+   uint8_t* b1=(uint8_t*)a[i];
+                ^
+HLS_SampleGn/core.cpp:24:25: error: expected expression
+   uint8_t* b1=(uint8_t*)a[i];
+                        ^
+HLS_SampleGn/core.cpp:28:11: error: use of undeclared identifier 'b1'
+ result +=b1[j];
+          ^
+6 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from HLS_SampleGn/core.cpp:1:
+HLS_SampleGn/core.cpp:5:1: error: unknown type name 'uint32_t'
+uint32_t a[4];
+^
+HLS_SampleGn/core.cpp:8:4: error: unknown type name 'int32_t'
+   int32_t u32;
+   ^
+HLS_SampleGn/core.cpp:9:4: error: unknown type name 'uint8_t'
+   uint8_t u8[4];
+   ^
+HLS_SampleGn/core.cpp:11:1: error: unknown type name 'uint8_t'
+uint8_t* getBytes(int32_t d){
+^
+HLS_SampleGn/core.cpp:11:19: error: use of undeclared identifier 'int32_t'
+uint8_t* getBytes(int32_t d){
+                  ^
+HLS_SampleGn/core.cpp:11:29: error: expected ';' after top level declarator
+uint8_t* getBytes(int32_t d){
+                            ^
+                            ;
+6 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from HLS_SampleGn/core.cpp:1:
+HLS_SampleGn/core.cpp:5:1: error: unknown type name 'uint32_t'
+uint32_t a[4];
+^
+HLS_SampleGn/core.cpp:8:4: error: unknown type name 'int32_t'
+   int32_t u32;
+   ^
+HLS_SampleGn/core.cpp:9:4: error: unknown type name 'uint8_t'
+   uint8_t u8[4];
+   ^
+HLS_SampleGn/core.cpp:11:8: error: expected ';' after top level declarator
+uint8_t* getBytes(int32_t d){
+       ^
+       ;
+4 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from HLS_SampleGn/core.cpp:1:
+HLS_SampleGn/core.cpp:5:1: error: unknown type name 'uint32_t'
+uint32_t a[4];
+^
+HLS_SampleGn/core.cpp:8:2: error: unknown type name 'uint32_t'
+ uint32_t u32;
+ ^
+HLS_SampleGn/core.cpp:9:2: error: unknown type name 'uint8_t'
+ uint8_t u8[4];
+ ^
+HLS_SampleGn/core.cpp:11:1: error: unknown type name 'uint8_t'
+uint8_t* getBytes(uint32_t d){
+^
+HLS_SampleGn/core.cpp:11:19: error: use of undeclared identifier 'uint32_t'
+uint8_t* getBytes(uint32_t d){
+                  ^
+HLS_SampleGn/core.cpp:11:30: error: expected ';' after top level declarator
+uint8_t* getBytes(uint32_t d){
+                             ^
+                             ;
+6 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+WARNING: [HLS 200-40] In file included from HLS_SampleGn/core.cpp:1:
+HLS_SampleGn/core.cpp:15:9: warning: address of stack memory associated with local variable 'ib' returned [-Wreturn-stack-address]
+ return ib.u8;
+        ^~
+1 warning generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:59 . Memory (MB): peak = 185.750 ; gain = 93.957
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:59 . Memory (MB): peak = 185.750 ; gain = 93.957
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'getBytes' into 'sampleGenerator' (HLS_SampleGn/core.cpp:36).
+INFO: [XFORM 203-603] Inlining function 'getBytes' into 'sampleGenerator' (HLS_SampleGn/core.cpp:37).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:01:02 . Memory (MB): peak = 185.750 ; gain = 93.957
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] HLS_SampleGn/core.cpp:40: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:01:03 . Memory (MB): peak = 207.785 ; gain = 115.992
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (HLS_SampleGn/core.cpp:29) in function 'sampleGenerator' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-1.2.1' (HLS_SampleGn/core.cpp:38) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (HLS_SampleGn/core.cpp:29) in function 'sampleGenerator' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (HLS_SampleGn/core.cpp:34) in function 'sampleGenerator' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.1' (HLS_SampleGn/core.cpp:38) in function 'sampleGenerator' completely with a factor of 4.
+INFO: [XFORM 203-102] Automatically partitioning small array 'a' completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'a' in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:01:04 . Memory (MB): peak = 257.820 ; gain = 166.027
+WARNING: [XFORM 203-561] 'Loop-1' (HLS_SampleGn/core.cpp:51:2) in function 'sampleGenerator' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:01:04 . Memory (MB): peak = 271.590 ; gain = 179.797
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sampleGenerator' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sampleGenerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-68] The II Violation in module 'sampleGenerator' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30) and axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30).
+WARNING: [SCHED 204-68] The II Violation in module 'sampleGenerator' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30) and axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30).
+WARNING: [SCHED 204-68] The II Violation in module 'sampleGenerator' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30) and axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30).
+WARNING: [SCHED 204-68] The II Violation in module 'sampleGenerator' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:35) and axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30).
+WARNING: [SCHED 204-68] The II Violation in module 'sampleGenerator' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 7, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:35) and axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 8, Depth = 8.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 65.072 seconds; current allocated memory: 203.505 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.413 seconds; current allocated memory: 203.657 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sampleGenerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/gain' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sampleGenerator' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'gain' to AXI-Lite port CRTL_BUS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sampleGenerator'.
+INFO: [HLS 200-111]  Elapsed time: 0.667 seconds; current allocated memory: 204.780 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:01:09 . Memory (MB): peak = 271.590 ; gain = 179.797
+INFO: [VHDL 208-304] Generating VHDL RTL for sampleGenerator.
+INFO: [VLOG 209-307] Generating Verilog RTL for sampleGenerator.
+INFO: [HLS 200-112] Total elapsed time: 68.893 seconds; peak allocated memory: 204.780 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:36 . Memory (MB): peak = 186.203 ; gain = 94.176
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:36 . Memory (MB): peak = 186.203 ; gain = 94.176
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:38 . Memory (MB): peak = 186.203 ; gain = 94.176
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:39 . Memory (MB): peak = 186.203 ; gain = 94.176
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:39 . Memory (MB): peak = 186.203 ; gain = 94.176
+WARNING: [XFORM 203-561] 'Loop-1' (HLS_SampleGn/core.cpp:29:2) in function 'sampleGenerator' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:39 . Memory (MB): peak = 186.203 ; gain = 94.176
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sampleGenerator' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sampleGenerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 39.939 seconds; current allocated memory: 113.482 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.195 seconds; current allocated memory: 113.682 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sampleGenerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/gain' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sampleGenerator' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'gain' to AXI-Lite port CRTL_BUS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sampleGenerator'.
+INFO: [HLS 200-111]  Elapsed time: 0.429 seconds; current allocated memory: 114.826 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:43 . Memory (MB): peak = 186.203 ; gain = 94.176
+INFO: [VHDL 208-304] Generating VHDL RTL for sampleGenerator.
+INFO: [VLOG 209-307] Generating Verilog RTL for sampleGenerator.
+INFO: [HLS 200-112] Total elapsed time: 43.404 seconds; peak allocated memory: 114.826 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 185.723 ; gain = 93.758
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 185.723 ; gain = 93.758
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:27 . Memory (MB): peak = 185.723 ; gain = 93.758
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:27 . Memory (MB): peak = 185.723 ; gain = 93.758
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:27 . Memory (MB): peak = 185.723 ; gain = 93.758
+WARNING: [XFORM 203-561] 'Loop-1' (HLS_SampleGn/core.cpp:29:2) in function 'sampleGenerator' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:28 . Memory (MB): peak = 185.723 ; gain = 93.758
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sampleGenerator' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sampleGenerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-68] The II Violation in module 'sampleGenerator' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:19) and axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:19).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 27.989 seconds; current allocated memory: 111.741 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.184 seconds; current allocated memory: 111.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sampleGenerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/gain' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sampleGenerator' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'gain' to AXI-Lite port CRTL_BUS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sampleGenerator'.
+INFO: [HLS 200-111]  Elapsed time: 0.426 seconds; current allocated memory: 113.029 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:31 . Memory (MB): peak = 185.723 ; gain = 93.758
+INFO: [VHDL 208-304] Generating VHDL RTL for sampleGenerator.
+INFO: [VLOG 209-307] Generating Verilog RTL for sampleGenerator.
+INFO: [HLS 200-112] Total elapsed time: 31.586 seconds; peak allocated memory: 113.029 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+WARNING: [HLS 200-40] In file included from HLS_SampleGn/core.cpp:1:
+HLS_SampleGn/core.cpp:15:9: warning: address of stack memory associated with local variable 'ib' returned [-Wreturn-stack-address]
+ return ib.u8;
+        ^~
+1 warning generated.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:42 . Memory (MB): peak = 186.234 ; gain = 94.059
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:43 . Memory (MB): peak = 186.234 ; gain = 94.059
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'getBytes' into 'sampleGenerator' (HLS_SampleGn/core.cpp:36).
+INFO: [XFORM 203-603] Inlining function 'getBytes' into 'sampleGenerator' (HLS_SampleGn/core.cpp:37).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:45 . Memory (MB): peak = 186.234 ; gain = 94.059
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] HLS_SampleGn/core.cpp:40: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:46 . Memory (MB): peak = 208.074 ; gain = 115.898
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (HLS_SampleGn/core.cpp:29) in function 'sampleGenerator' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-1.2.1' (HLS_SampleGn/core.cpp:38) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (HLS_SampleGn/core.cpp:29) in function 'sampleGenerator' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2' (HLS_SampleGn/core.cpp:34) in function 'sampleGenerator' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.2.1' (HLS_SampleGn/core.cpp:38) in function 'sampleGenerator' completely with a factor of 4.
+INFO: [XFORM 203-102] Automatically partitioning small array 'a' completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'a' in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:47 . Memory (MB): peak = 258.363 ; gain = 166.188
+WARNING: [XFORM 203-561] 'Loop-1' (HLS_SampleGn/core.cpp:51:2) in function 'sampleGenerator' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:48 . Memory (MB): peak = 272.922 ; gain = 180.746
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sampleGenerator' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sampleGenerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-68] The II Violation in module 'sampleGenerator' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30) and axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30).
+WARNING: [SCHED 204-68] The II Violation in module 'sampleGenerator' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30) and axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30).
+WARNING: [SCHED 204-68] The II Violation in module 'sampleGenerator' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30) and axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30).
+WARNING: [SCHED 204-68] The II Violation in module 'sampleGenerator' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:35) and axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30).
+WARNING: [SCHED 204-68] The II Violation in module 'sampleGenerator' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 7, distance = 1, offset = 1)
+   between axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:35) and axis read on port 'inStream_V_data_V' (HLS_SampleGn/core.cpp:30).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 8, Depth = 37.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 48.119 seconds; current allocated memory: 203.933 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.368 seconds; current allocated memory: 204.222 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sampleGenerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/gain' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sampleGenerator' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'gain' to AXI-Lite port CRTL_BUS.
+INFO: [SYN 201-210] Renamed object name 'sampleGenerator_srem_32ns_32ns_32_36_1' to 'sampleGenerator_sbkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'sampleGenerator_sbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sampleGenerator'.
+INFO: [HLS 200-111]  Elapsed time: 0.553 seconds; current allocated memory: 205.665 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'sampleGenerator_sbkb_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:00:52 . Memory (MB): peak = 272.922 ; gain = 180.746
+INFO: [VHDL 208-304] Generating VHDL RTL for sampleGenerator.
+INFO: [VLOG 209-307] Generating Verilog RTL for sampleGenerator.
+INFO: [HLS 200-112] Total elapsed time: 52.6 seconds; peak allocated memory: 205.665 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:53 . Memory (MB): peak = 185.906 ; gain = 93.223
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:53 . Memory (MB): peak = 185.906 ; gain = 93.223
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:56 . Memory (MB): peak = 185.906 ; gain = 93.223
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:56 . Memory (MB): peak = 210.602 ; gain = 117.918
+INFO: [XFORM 203-11] Balancing expressions in function 'sampleGenerator' (HLS_SampleGn/core.cpp:18)...8 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:57 . Memory (MB): peak = 260.559 ; gain = 167.875
+WARNING: [XFORM 203-561] 'Loop-1' (HLS_SampleGn/core.cpp:30:14) in function 'sampleGenerator' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:58 . Memory (MB): peak = 274.621 ; gain = 181.938
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'sampleGenerator' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sampleGenerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 58.523 seconds; current allocated memory: 207.683 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 3 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.293 seconds; current allocated memory: 208.076 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sampleGenerator' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sampleGenerator/gain' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sampleGenerator' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'a' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'gain' to AXI-Lite port CRTL_BUS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sampleGenerator'.
+INFO: [HLS 200-111]  Elapsed time: 0.648 seconds; current allocated memory: 209.395 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:01:03 . Memory (MB): peak = 289.465 ; gain = 196.781
+INFO: [VHDL 208-304] Generating VHDL RTL for sampleGenerator.
+INFO: [VLOG 209-307] Generating Verilog RTL for sampleGenerator.
+INFO: [HLS 200-112] Total elapsed time: 63.068 seconds; peak allocated memory: 209.395 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+ERROR: [HLS 214-124] use of undeclared identifier 'gain': C:\Users\Mohsen\Desktop\zturn_sg_DMA\Mahsa\HLS_SampleGn\core.cpp:12
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:52 . Memory (MB): peak = 186.723 ; gain = 94.582
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:52 . Memory (MB): peak = 186.723 ; gain = 94.582
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:55 . Memory (MB): peak = 186.723 ; gain = 94.582
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:56 . Memory (MB): peak = 208.570 ; gain = 116.430
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:57 . Memory (MB): peak = 257.922 ; gain = 165.781
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:58 . Memory (MB): peak = 272.793 ; gain = 180.652
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MMU' ...
+WARNING: [SYN 201-107] Renaming port name 'MMU/loop' to 'MMU/loop_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MMU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 58.163 seconds; current allocated memory: 204.917 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 1 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.297 seconds; current allocated memory: 205.326 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MMU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MMU/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MMU/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MMU/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MMU/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MMU/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MMU/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MMU/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MMU/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MMU/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MMU/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MMU/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MMU/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MMU/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MMU/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MMU/loop_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'MMU' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'loop_r' to AXI-Lite port CRTL_BUS.
+INFO: [SYN 201-210] Renamed object name 'MMU_mac_muladd_8ns_8ns_32ns_32_1_1' to 'MMU_mac_muladd_8nbkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'MMU_mac_muladd_8nbkb': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MMU'.
+INFO: [HLS 200-111]  Elapsed time: 0.571 seconds; current allocated memory: 206.639 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:01:02 . Memory (MB): peak = 285.359 ; gain = 193.219
+INFO: [VHDL 208-304] Generating VHDL RTL for MMU.
+INFO: [VLOG 209-307] Generating Verilog RTL for MMU.
+INFO: [HLS 200-112] Total elapsed time: 62.134 seconds; peak allocated memory: 206.639 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from HLS_SampleGn/core.cpp:1:
+HLS_SampleGn/core.cpp:48:12: error: subscripted value is not an array, pointer, or vector
+     out[i][j]=0;
+     ~~~~~~^~
+1 error generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:41 . Memory (MB): peak = 185.895 ; gain = 93.988
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:41 . Memory (MB): peak = 185.895 ; gain = 93.988
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:44 . Memory (MB): peak = 185.895 ; gain = 93.988
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:44 . Memory (MB): peak = 208.539 ; gain = 116.633
+INFO: [XFORM 203-101] Partitioning array 'data'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'filter'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out'  in dimension 1 completely.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.16i32P.i4' into 'DLU' (HLS_SampleGn/core.cpp:85).
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:47 . Memory (MB): peak = 260.629 ; gain = 168.723
+WARNING: [XFORM 203-561] 'Loop-1' (HLS_SampleGn/core.cpp:40:3) in function 'DLU' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:48 . Memory (MB): peak = 274.031 ; gain = 182.125
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'DLU' ...
+WARNING: [SYN 201-107] Renaming port name 'DLU/loop' to 'DLU/loop_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 48.493 seconds; current allocated memory: 211.657 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 9 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.057 seconds; current allocated memory: 214.673 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/loop_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'DLU' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'w1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'h1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'w2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'h2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'stride' is power-on initialization.
+WARNING: [RTGEN 206-101] Global array 'data_0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_3' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_4' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_5' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_6' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_7' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_8' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_9' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_10' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_11' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_12' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_13' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_14' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_15' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_16' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_17' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_18' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_19' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_20' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_21' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_22' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_23' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_24' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_25' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_26' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_27' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_28' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_29' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_30' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_31' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_3' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_4' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_5' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_6' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_7' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_8' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_9' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_10' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_11' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_12' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_13' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_14' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_15' will not be exposed as RTL port.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'loop_r' to AXI-Lite port CRTL_BUS.
+INFO: [RTGEN 206-100] Generating core module 'DLU_mux_325_32_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DLU'.
+INFO: [HLS 200-111]  Elapsed time: 3.344 seconds; current allocated memory: 219.881 MB.
+INFO: [RTMG 210-278] Implementing memory 'DLU_data_0_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'DLU_filter_0_ram (RAM)' using distributed RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:13 ; elapsed = 00:01:00 . Memory (MB): peak = 297.695 ; gain = 205.789
+INFO: [VHDL 208-304] Generating VHDL RTL for DLU.
+INFO: [VLOG 209-307] Generating Verilog RTL for DLU.
+INFO: [HLS 200-112] Total elapsed time: 60.165 seconds; peak allocated memory: 219.881 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:42 . Memory (MB): peak = 186.004 ; gain = 92.750
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:43 . Memory (MB): peak = 186.004 ; gain = 92.750
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:45 . Memory (MB): peak = 186.004 ; gain = 92.750
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:45 . Memory (MB): peak = 208.699 ; gain = 115.445
+INFO: [XFORM 203-101] Partitioning array 'data'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'filter'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out'  in dimension 1 completely.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.16i32P.i4' into 'DLU' (HLS_SampleGn/core.cpp:101).
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:48 . Memory (MB): peak = 261.199 ; gain = 167.945
+WARNING: [XFORM 203-561] 'Loop-1' (HLS_SampleGn/core.cpp:40:3) in function 'DLU' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:49 . Memory (MB): peak = 273.930 ; gain = 180.676
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'DLU' ...
+WARNING: [SYN 201-107] Renaming port name 'DLU/loop' to 'DLU/loop_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 49.897 seconds; current allocated memory: 212.425 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 9 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.154 seconds; current allocated memory: 215.565 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/loop_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'DLU' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'w1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'h1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'w2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'h2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'stride' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'out_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_3' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_4' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_5' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_6' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_7' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_8' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_9' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_10' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_11' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_12' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_13' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_14' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_15' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_15' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_3' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_4' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_5' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_6' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_7' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_8' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_9' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_10' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_11' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_12' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_13' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_14' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_15' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_16' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_17' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_18' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_19' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_20' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_21' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_22' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_23' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_24' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_25' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_26' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_27' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_28' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_29' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_30' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_31' will not be exposed as RTL port.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'loop_r' to AXI-Lite port CRTL_BUS.
+INFO: [RTGEN 206-100] Generating core module 'DLU_mux_325_32_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DLU'.
+INFO: [HLS 200-111]  Elapsed time: 3.446 seconds; current allocated memory: 221.064 MB.
+INFO: [RTMG 210-278] Implementing memory 'DLU_data_0_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'DLU_filter_0_ram (RAM)' using distributed RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:14 ; elapsed = 00:01:02 . Memory (MB): peak = 299.496 ; gain = 206.242
+INFO: [VHDL 208-304] Generating VHDL RTL for DLU.
+INFO: [VLOG 209-307] Generating Verilog RTL for DLU.
+INFO: [HLS 200-112] Total elapsed time: 62.107 seconds; peak allocated memory: 221.064 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:40 . Memory (MB): peak = 186.438 ; gain = 94.461
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:40 . Memory (MB): peak = 186.438 ; gain = 94.461
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:43 . Memory (MB): peak = 186.438 ; gain = 94.461
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:43 . Memory (MB): peak = 208.785 ; gain = 116.809
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:45 . Memory (MB): peak = 260.281 ; gain = 168.305
+WARNING: [XFORM 203-561] 'Loop-1' (HLS_SampleGn/core.cpp:40:3) in function 'DLU' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:46 . Memory (MB): peak = 272.777 ; gain = 180.801
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'DLU' ...
+WARNING: [SYN 201-107] Renaming port name 'DLU/loop' to 'DLU/loop_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'DLU/out' to 'DLU/out_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 46.552 seconds; current allocated memory: 208.474 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 9 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.818 seconds; current allocated memory: 209.761 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/loop_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'DLU' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'w1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'h1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'w2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'h2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'stride' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'loop_r' to AXI-Lite port CRTL_BUS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DLU'.
+INFO: [HLS 200-111]  Elapsed time: 1.163 seconds; current allocated memory: 212.608 MB.
+INFO: [RTMG 210-278] Implementing memory 'DLU_data_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'DLU_filter_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'DLU_out_r_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:11 ; elapsed = 00:00:54 . Memory (MB): peak = 291.941 ; gain = 199.965
+INFO: [VHDL 208-304] Generating VHDL RTL for DLU.
+INFO: [VLOG 209-307] Generating Verilog RTL for DLU.
+INFO: [HLS 200-112] Total elapsed time: 54.14 seconds; peak allocated memory: 212.608 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:41 . Memory (MB): peak = 185.969 ; gain = 93.836
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:41 . Memory (MB): peak = 185.969 ; gain = 93.836
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:43 . Memory (MB): peak = 185.969 ; gain = 93.836
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:44 . Memory (MB): peak = 209.352 ; gain = 117.219
+INFO: [XFORM 203-101] Partitioning array 'data'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'filter'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'out'  in dimension 1 completely.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.16i32P.i4' into 'DLU' (HLS_SampleGn/core.cpp:101).
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:00:48 . Memory (MB): peak = 260.730 ; gain = 168.598
+WARNING: [XFORM 203-561] 'Loop-1' (HLS_SampleGn/core.cpp:40:3) in function 'DLU' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:51 . Memory (MB): peak = 274.656 ; gain = 182.523
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'DLU' ...
+WARNING: [SYN 201-107] Renaming port name 'DLU/loop' to 'DLU/loop_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 52.313 seconds; current allocated memory: 216.003 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 9 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.22 seconds; current allocated memory: 219.786 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/loop_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'DLU' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'w1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'h1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'w2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'h2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'stride' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'out_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_3' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_4' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_5' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_6' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_7' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_8' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_9' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_10' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_11' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_12' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_13' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_14' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_15' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_15' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_3' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_4' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_5' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_6' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_7' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_8' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_9' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_10' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_11' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_12' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_13' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_14' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_15' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_16' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_17' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_18' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_19' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_20' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_21' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_22' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_23' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_24' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_25' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_26' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_27' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_28' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_29' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_30' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_31' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_3' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_4' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_5' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_6' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_7' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_8' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_9' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_10' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_11' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_12' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_13' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_14' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'filter_15' will not be exposed as RTL port.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'loop_r' to AXI-Lite port CRTL_BUS.
+INFO: [RTGEN 206-100] Generating core module 'DLU_mux_164_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DLU_mux_325_32_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DLU'.
+INFO: [HLS 200-111]  Elapsed time: 4.404 seconds; current allocated memory: 225.688 MB.
+INFO: [RTMG 210-278] Implementing memory 'DLU_data_0_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'DLU_filter_0_ram (RAM)' using distributed RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:20 ; elapsed = 00:01:08 . Memory (MB): peak = 307.313 ; gain = 215.180
+INFO: [VHDL 208-304] Generating VHDL RTL for DLU.
+INFO: [VLOG 209-307] Generating Verilog RTL for DLU.
+INFO: [HLS 200-112] Total elapsed time: 68.412 seconds; peak allocated memory: 225.688 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:48 . Memory (MB): peak = 186.043 ; gain = 92.801
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:48 . Memory (MB): peak = 186.043 ; gain = 92.801
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:50 . Memory (MB): peak = 186.043 ; gain = 92.801
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:51 . Memory (MB): peak = 208.891 ; gain = 115.648
+INFO: [XFORM 203-101] Partitioning array 'data'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'filter'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out'  in dimension 1 completely.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.16i32P.i4' into 'DLU' (HLS_SampleGn/core.cpp:101).
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:53 . Memory (MB): peak = 261.137 ; gain = 167.895
+WARNING: [XFORM 203-561] 'Loop-1' (HLS_SampleGn/core.cpp:40:3) in function 'DLU' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:55 . Memory (MB): peak = 273.738 ; gain = 180.496
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'DLU' ...
+WARNING: [SYN 201-107] Renaming port name 'DLU/loop' to 'DLU/loop_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 55.443 seconds; current allocated memory: 212.425 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 9 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.227 seconds; current allocated memory: 215.565 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/loop_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'DLU' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'w1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'h1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'w2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'h2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'stride' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'out_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_3' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_4' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_5' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_6' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_7' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_8' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_9' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_10' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_11' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_12' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_13' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_14' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_15' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_15' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_3' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_4' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_5' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_6' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_7' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_8' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_9' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_10' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_11' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_12' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_13' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_14' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_15' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_16' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_17' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_18' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_19' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_20' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_21' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_22' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_23' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_24' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_25' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_26' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_27' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_28' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_29' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_30' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global array 'data_31' will not be exposed as RTL port.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'loop_r' to AXI-Lite port CRTL_BUS.
+INFO: [RTGEN 206-100] Generating core module 'DLU_mux_325_32_1_1': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DLU'.
+INFO: [HLS 200-111]  Elapsed time: 2.916 seconds; current allocated memory: 221.062 MB.
+INFO: [RTMG 210-278] Implementing memory 'DLU_data_0_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'DLU_filter_0_ram (RAM)' using distributed RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:14 ; elapsed = 00:01:07 . Memory (MB): peak = 299.105 ; gain = 205.863
+INFO: [VHDL 208-304] Generating VHDL RTL for DLU.
+INFO: [VLOG 209-307] Generating Verilog RTL for DLU.
+INFO: [HLS 200-112] Total elapsed time: 67.536 seconds; peak allocated memory: 221.062 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:01:04 . Memory (MB): peak = 185.922 ; gain = 117.043
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:01:04 . Memory (MB): peak = 185.922 ; gain = 117.043
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:01:07 . Memory (MB): peak = 185.922 ; gain = 117.043
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:01:07 . Memory (MB): peak = 209.277 ; gain = 140.398
+WARNING: [XFORM 203-105] Cannot partition array 'data' : indivisible factor 32 on dimension 1, which has 48 elements.
+WARNING: [XFORM 203-105] Cannot partition array 'data' : indivisible factor 32 on dimension 1, which has 48 elements.
+INFO: [XFORM 203-101] Partitioning array 'filter'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out'  in dimension 1 completely.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.16i32P.i4' into 'DLU' (HLS_SampleGn/core.cpp:117).
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:01:10 . Memory (MB): peak = 261.168 ; gain = 192.289
+WARNING: [XFORM 203-561] 'Loop-1' (HLS_SampleGn/core.cpp:40:3) in function 'DLU' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:01:12 . Memory (MB): peak = 275.082 ; gain = 206.203
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'DLU' ...
+WARNING: [SYN 201-107] Renaming port name 'DLU/loop' to 'DLU/loop_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 72.641 seconds; current allocated memory: 212.776 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 11 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.211 seconds; current allocated memory: 215.375 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/loop_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'DLU' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'w1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'h1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'w2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'h2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'stride' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'out_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_3' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_4' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_5' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_6' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_7' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_8' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_9' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_10' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_11' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_12' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_13' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_14' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_15' will not be exposed as RTL port.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'loop_r' to AXI-Lite port CRTL_BUS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DLU'.
+INFO: [HLS 200-111]  Elapsed time: 2.184 seconds; current allocated memory: 219.278 MB.
+INFO: [RTMG 210-278] Implementing memory 'DLU_data_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'DLU_filter_0_ram (RAM)' using distributed RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:14 ; elapsed = 00:01:25 . Memory (MB): peak = 298.875 ; gain = 229.996
+INFO: [VHDL 208-304] Generating VHDL RTL for DLU.
+INFO: [VLOG 209-307] Generating Verilog RTL for DLU.
+INFO: [HLS 200-112] Total elapsed time: 84.656 seconds; peak allocated memory: 219.278 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:43 . Memory (MB): peak = 185.852 ; gain = 93.703
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:43 . Memory (MB): peak = 185.852 ; gain = 93.703
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:45 . Memory (MB): peak = 185.852 ; gain = 93.703
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:46 . Memory (MB): peak = 209.305 ; gain = 117.156
+WARNING: [XFORM 203-105] Cannot partition array 'data' : indivisible factor 32 on dimension 1, which has 48 elements.
+WARNING: [XFORM 203-105] Cannot partition array 'data' : indivisible factor 32 on dimension 1, which has 48 elements.
+INFO: [XFORM 203-101] Partitioning array 'filter'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out'  in dimension 1 completely.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.16i32P.i4' into 'DLU' (HLS_SampleGn/core.cpp:120).
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:48 . Memory (MB): peak = 261.465 ; gain = 169.316
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:50 . Memory (MB): peak = 274.586 ; gain = 182.438
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'DLU' ...
+WARNING: [SYN 201-107] Renaming port name 'DLU/loop' to 'DLU/loop_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 50.423 seconds; current allocated memory: 212.718 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 10 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.138 seconds; current allocated memory: 215.328 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/loop_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'DLU' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'w1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'h1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'out_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_3' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_4' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_5' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_6' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_7' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_8' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_9' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_10' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_11' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_12' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_13' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_14' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_15' will not be exposed as RTL port.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'loop_r' to AXI-Lite port CRTL_BUS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DLU'.
+INFO: [HLS 200-111]  Elapsed time: 2.37 seconds; current allocated memory: 219.209 MB.
+INFO: [RTMG 210-278] Implementing memory 'DLU_data_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'DLU_filter_0_ram (RAM)' using distributed RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:14 ; elapsed = 00:01:02 . Memory (MB): peak = 298.992 ; gain = 206.844
+INFO: [VHDL 208-304] Generating VHDL RTL for DLU.
+INFO: [VLOG 209-307] Generating Verilog RTL for DLU.
+INFO: [HLS 200-112] Total elapsed time: 61.688 seconds; peak allocated memory: 219.209 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:43 . Memory (MB): peak = 186.375 ; gain = 93.426
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:43 . Memory (MB): peak = 186.375 ; gain = 93.426
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:45 . Memory (MB): peak = 186.375 ; gain = 93.426
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:46 . Memory (MB): peak = 209.793 ; gain = 116.844
+WARNING: [XFORM 203-105] Cannot partition array 'data' : indivisible factor 32 on dimension 1, which has 48 elements.
+WARNING: [XFORM 203-105] Cannot partition array 'data' : indivisible factor 32 on dimension 1, which has 48 elements.
+INFO: [XFORM 203-101] Partitioning array 'filter'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out'  in dimension 1 completely.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.16i32P.i4' into 'DLU' (HLS_SampleGn/core.cpp:128).
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:48 . Memory (MB): peak = 261.945 ; gain = 168.996
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:50 . Memory (MB): peak = 275.336 ; gain = 182.387
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'DLU' ...
+WARNING: [SYN 201-107] Renaming port name 'DLU/loop' to 'DLU/loop_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 50.597 seconds; current allocated memory: 214.324 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 10 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.392 seconds; current allocated memory: 217.464 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/loop_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'DLU' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'w1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'h1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'out_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_3' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_4' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_5' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_6' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_7' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_8' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_9' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_10' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_11' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_12' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_13' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_14' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_15' will not be exposed as RTL port.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'loop_r' to AXI-Lite port CRTL_BUS.
+INFO: [SYN 201-210] Renamed object name 'DLU_mac_muladd_8s_8ns_32ns_32_1_1' to 'DLU_mac_muladd_8sbkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'DLU_mac_muladd_8sbkb': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DLU'.
+INFO: [HLS 200-111]  Elapsed time: 2.81 seconds; current allocated memory: 222.083 MB.
+INFO: [RTMG 210-278] Implementing memory 'DLU_data_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'DLU_filter_0_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:15 ; elapsed = 00:01:04 . Memory (MB): peak = 303.379 ; gain = 210.430
+INFO: [VHDL 208-304] Generating VHDL RTL for DLU.
+INFO: [VLOG 209-307] Generating Verilog RTL for DLU.
+INFO: [HLS 200-112] Total elapsed time: 63.839 seconds; peak allocated memory: 222.083 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from HLS_SampleGn/core.cpp:1:
+HLS_SampleGn/core.cpp:47:5: error: use of undeclared identifier 'printf'
+    printf("data[%d] ",i);
+    ^
+HLS_SampleGn/core.cpp:55:6: error: use of undeclared identifier 'printf'
+     printf("%d, %d, %d, %d,",data[i][j+0],data[i][j+1],data[i][j+2],data[i][j+3]);
+     ^
+HLS_SampleGn/core.cpp:57:5: error: use of undeclared identifier 'printf'
+    printf("\n");
+    ^
+HLS_SampleGn/core.cpp:80:7: error: use of undeclared identifier 'printf'
+      printf("filter(%d,1:4)= %d,%d,%d,%d\n",i,filter[i][j+0],filter[i][j+1],filter[i][j+2],filter[i][j+3]);
+      ^
+HLS_SampleGn/core.cpp:112:7: error: use of undeclared identifier 'printf'
+      printf("out[0]+=data[%d+0][%d+%d]*filter[0][%d]= %d * %d\n",r,j,c,j,data[r+0][c+j],filter[0][j]);
+      ^
+HLS_SampleGn/core.cpp:113:7: error: use of undeclared identifier 'printf'
+      printf("out[1]+=data[%d+1][%d+%d]*filter[1][%d]= %d * %d\n",r,j,c,j,data[r+1][c+j],filter[1][j]);
+      ^
+HLS_SampleGn/core.cpp:114:7: error: use of undeclared identifier 'printf'
+      printf("out[2]+=data[%d+2][%d+%d]*filter[2][%d]= %d * %d\n",r,j,c,j,data[r+2][c+j],filter[2][j]);
+      ^
+HLS_SampleGn/core.cpp:115:7: error: use of undeclared identifier 'printf'
+      printf("--------------------------------------------------\n");
+      ^
+HLS_SampleGn/core.cpp:137:7: error: use of undeclared identifier 'printf'
+      printf("out[%d]= %d\n",i,out[i]);
+      ^
+HLS_SampleGn/core.cpp:141:6: error: use of undeclared identifier 'printf'
+     printf("valOut.data= %d\n",col);
+     ^
+10 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'HLS_SampleGn/core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:42 . Memory (MB): peak = 185.730 ; gain = 93.730
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:42 . Memory (MB): peak = 185.730 ; gain = 93.730
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:44 . Memory (MB): peak = 185.730 ; gain = 93.730
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:45 . Memory (MB): peak = 209.379 ; gain = 117.379
+WARNING: [XFORM 203-105] Cannot partition array 'data' : indivisible factor 32 on dimension 1, which has 48 elements.
+WARNING: [XFORM 203-105] Cannot partition array 'data' : indivisible factor 32 on dimension 1, which has 48 elements.
+INFO: [XFORM 203-101] Partitioning array 'filter'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'out'  in dimension 1 completely.
+INFO: [XFORM 203-603] Inlining function 'aesl_mux_load.16i32P.i4' into 'DLU' (HLS_SampleGn/core.cpp:136).
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:47 . Memory (MB): peak = 261.512 ; gain = 169.512
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:48 . Memory (MB): peak = 275.785 ; gain = 183.785
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'DLU' ...
+WARNING: [SYN 201-107] Renaming port name 'DLU/loop' to 'DLU/loop_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 49.474 seconds; current allocated memory: 213.335 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 8 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.446 seconds; current allocated memory: 216.135 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DLU' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/inStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/outStream_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'DLU/loop_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'DLU' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'w1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'h1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'out_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_0' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_1' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_2' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_3' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_4' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_5' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_6' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_7' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_8' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_9' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_10' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_11' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_12' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_13' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Register 'out_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Global scalar 'out_14' will not be exposed as RTL port.
+WARNING: [RTGEN 206-101] Global scalar 'out_15' will not be exposed as RTL port.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'loop_r' to AXI-Lite port CRTL_BUS.
+INFO: [SYN 201-210] Renamed object name 'DLU_mac_muladd_8s_8ns_32ns_32_1_1' to 'DLU_mac_muladd_8sbkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'DLU_mac_muladd_8sbkb': 16 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DLU'.
+INFO: [HLS 200-111]  Elapsed time: 2.499 seconds; current allocated memory: 220.812 MB.
+INFO: [RTMG 210-278] Implementing memory 'DLU_data_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'DLU_filter_0_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:15 ; elapsed = 00:01:03 . Memory (MB): peak = 302.340 ; gain = 210.340
+INFO: [VHDL 208-304] Generating VHDL RTL for DLU.
+INFO: [VLOG 209-307] Generating Verilog RTL for DLU.
+INFO: [HLS 200-112] Total elapsed time: 62.715 seconds; peak allocated memory: 220.812 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
